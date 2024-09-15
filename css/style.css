@@ -13,8 +13,17 @@
 ::selection{
     background-color: #c50529;
 }
-body{
+body {
     overflow-x: hidden;
+}
+
+.head-left-side h1 {
+    font-size: 3em; /* Adjust from 4em */
+}
+
+.head-right-side img {
+    max-width: 100%; /* Adjust to fit within the parent container */
+    margin-left: 0;  /* Remove the margin to prevent overflow */
 }
 @media(max-width: 860px){
     body{
@@ -243,7 +252,7 @@ nav button{
 .team{
     background-color: black;
     width: 100%;
-    max-height: 210vh;
+    /* max-height: 210vh; */
     padding-bottom: 5%;
 
 }
@@ -325,7 +334,7 @@ nav button{
 
 .contact{
     width: 100%;
-    max-height: 160vh;
+    max-height: 169vh;
     background-color: #833556;
 }
 .contact-sides{
@@ -525,4 +534,20 @@ input::-webkit-inner-spin-button {
         width: 133.88px;
         height: 133.88px;
     }
+}
+
+@media (max-width: 321px) {
+    body {
+        width: 181%;
+    }
+}
+@media (max-width:454px) {
+    .g1 button {
+        margin-left: 0px;
+    }
+    .g1 h1, .g1 h5 {
+        padding-right: 1px;
+        text-align: center;
+    }
+    
 }
